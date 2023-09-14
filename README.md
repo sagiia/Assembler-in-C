@@ -14,9 +14,9 @@ To build the program you can use makefile by make command:
 The assembly files need to be with an **`.as` extension**.
 After compile, you can send the file names to the program as arguments (without the file extensions).
 
-To compile the files first.as, sec.as, x.as you need to run:
+To compile the files first.as, second.as, x.as you need to run:
 ```
->   assembler first sex x
+>   assembler first second x
 ```
 The output files with the same filenames and the following extensions:  
 - `.ob` - Object file
