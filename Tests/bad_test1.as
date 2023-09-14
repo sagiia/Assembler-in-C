@@ -1,0 +1,96 @@
+;LABEL_ALREADY_EXISTS
+test:
+test:
+
+;COMMA_REQUIRED_BETWEEN_VALUES
+.data 10 20 30
+.entry ex1 ex2 ex3
+.extern ex4 ex5 ex6
+
+;DATA_NEED_NUM_VALUE
+.data 10 , 20 , ABC
+.data 1o, AA
+
+;CANT_DEFINE_LABEL_BEFORE_ENTRY
+;CANT_FIND_LABEL_TO_ENTRY
+testENTRY: .entry ex1
+
+;CANT_DEFINE_LABEL_BEFORE_EXTERN
+testEXTERN: .extern ex4
+
+;STRING_STRUCTURE_NOT_VALID
+.string abcdefg"
+
+;STRING_MUST_END_IN_QUOTES
+.string "abcdefg
+
+;STRING_DIRECTIVE_ACCEPTS_ONE_PARAMETER
+.string "abcdefg" , "test"
+
+;TOO_MUCH_WORDS_FOR_INSTRUCTION
+;INSTRUCTION_SHOULD_RECEIVE_TWO_OPERANDS
+test1: mov @r1,@r2,@r3
+test2: mov @r1,@r2,
+
+;INVALID_LABEL_NAME
+1test:
+Test1test!:
+
+;INSTRUCTION_NAME_NOT_EXIST
+free @r1, @r2
+
+;COMMA_REQUIRED_BETWEEN_OPERANDS
+mov @r1 @r2
+
+;INSTRUCTION_SHOULD_RECEIVE_ONE_OPERAND
+not
+not @r1 , @r2
+
+;INSTRUCTION_SHOULD_NOT_RECEIVE_OPERANDS
+stop @r0
+rts @r1 , @r5
+
+;INVALID_ADDRESS_METHOD_FOR_INSTRUCTION
+mov @r1, 10
+add @r1, 10
+sub @r1, 10
+not 10
+clr 10
+lea 10 , 10
+lea @r0 , 10
+inc 10
+dec 10
+jmp 10
+bne 10
+red 10
+jsr 10
+
+;MUST_PROVIDE_LABELS_TO_EXTERN
+.extern
+
+;MUST_PROVIDE_LABELS_TO_ENTRY
+.entry
+
+;MUST_PROVIDE_VALUES_TO_DATA
+.data
+
+;INVALID_COMMA_POSITION
+.data , 10
+.entry , test1
+.extern , test1
+
+;LABEL_NOT_FOUND
+mov @r1, TEST
+mov TEST , @r1
+
+;NESTED_MACRO_DEFINITION
+mcro test11
+mov @r1,@r2
+mcro test12
+mov @r3,@r4
+endmcro
+endmcro
+
+;MACRO_NAME_IS_INSTRUCTION_OR_DIRECTIVE
+mcro mov
+endmcro
