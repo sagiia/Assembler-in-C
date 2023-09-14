@@ -1,6 +1,8 @@
 # Assembler Project - C Course 20465
 
-This project is **_two-pass assembler_** model with the implementation of macros.  
+This project is **_two-pass assembler_** model with the implementation of macros.
+
+The full assignment (in Hebrew) is in the "Final project" file.
 
 ## Getting Started
 
@@ -123,3 +125,6 @@ A **_directive_** line of the following structure:
 There are 8 CPU registers: r0, r1, r2, r3, r4, r5, r6, r7.<br />
 The size of each register is 12 bits.  
 
+## Authors
+
+* **Sagi Menahem (A.K.A sagiia).**
