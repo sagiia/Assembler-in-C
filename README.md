@@ -68,7 +68,7 @@ The program after retiring the macro will look like this:
 
 Every software *instruction* is encoded into a few *words* in memory, The first word is of the following structure:
 
-| 11  10   9| 8 7 6 5 | 4 3 2 | 1 0 
+| 11  10   9| 8 7 6 5 | 4 3 2 | 1 0 |
 |------------------|---------|-------|----
 | Addressing source | Opcode | Addressing destination | A,R,E 
 
