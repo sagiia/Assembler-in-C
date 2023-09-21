@@ -4,6 +4,8 @@ This project is **_two-pass assembler_** model with the implementation of macros
 
 The full assignment (in Hebrew) is in the "Final project" file.
 
+It received a grade of 100.
+
 ## Getting Started
 
 The project was coded and compiled using Ubuntu, but it should run on all Linux versions.
