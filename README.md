@@ -6,6 +6,17 @@ The full assignment (in Hebrew) is in the "Final project" file.
 
 It received a grade of 100.
 
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Macros](#macros)
+- [Instruction Structure](#instruction-structure)
+- [Commands](#commands)
+- [Directives](#directives)
+- [Registers](#registers)
+- [Author](#author)
+
 ## Getting Started
 
 The project was coded and compiled using Ubuntu, but it should run on all Linux versions.
@@ -127,6 +138,6 @@ A **_directive_** line of the following structure:
 There are 8 CPU registers: r0, r1, r2, r3, r4, r5, r6, r7.<br />
 The size of each register is 12 bits.  
 
-## Authors
+## Author
 
 * **Sagi Menahem (A.K.A sagiia).**
